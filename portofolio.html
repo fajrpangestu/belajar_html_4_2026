@@ -10,7 +10,8 @@
      <header>
         <div class="nav-container">
                 <h2 class="logo">Fajar Pangestu</h2>
-            <nav>
+                <button onclick="toogleMenu()">☰</button>
+            <nav id="menu">
                 <a href="#home">Home</a>
                 <a href="#ability">Ability</a>
                 <a href="#about">About</a>
@@ -97,5 +98,12 @@
     <footer>
         <p>Copyright &copy; 2026 FajarPangestu</p>
     </footer>
+    
+    <script>
+        function
+        toogleMenu() {
+            document.getElementById ('menu').classList.toggle("tampil");
+        }
+    </script>
 </body>
 </html>

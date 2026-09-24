@@ -1,5 +1,5 @@
-body,
-html {
+html,
+body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
@@ -102,7 +102,7 @@ nav > a:hover {
 }
 
 .normal-section {
-    height: 450px;
+    height: 800px;
     padding-top: 100px;
 }
 
@@ -164,6 +164,10 @@ footer {
     text-align: center;
 }
 
+.nav-container > button {
+    display: none;
+}
+
 @media (max-width: 480px) {
     .gallery {
         grid-template-columns: repeat(1, 1fr);
@@ -183,5 +187,34 @@ footer {
     }
     figure > img {
         height: 125px;
+    }
+    
+    .nav-container > button {
+        margin-right: 25px;
+        display: block;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: rgba(249, 228, 190, 0.7);
+        width: auto;
+        padding: 10px 0px;
+        right: 25px;
+        top: 48px;
+    }
+
+    nav > a {
+        padding: 10px;
+        color: #333;
+    }
+
+    nav > a:hover {
+        color: rgb(137, 137, 254);
+    }
+
+    nav.tampil {
+        display: flex;
     }
 }
